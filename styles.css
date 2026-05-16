@@ -821,9 +821,20 @@ button {
   }
 
   .student-actions {
-    grid-template-columns: repeat(4, max-content);
+    display: flex;
     justify-content: flex-start;
-    /* margin-top: 16px; */
+    width: 100%;
+  }
+
+  .student-actions .btn:last-child {
+    margin-left: auto;
+    background-color: #08545B; /* Un color más oscuro que el primario para resaltar */
+    border-color: #08545B;
+  }
+
+  .student-actions .btn:last-child:hover {
+    background-color: #0b6770;
+    border-color: #0b6770;
   }
 
   .tabs-container {
@@ -851,7 +862,7 @@ button {
   }
 
   .auditoria-periodo {
-    width: 200px;
+    width: 128px;
   }
 
   .auditoria-curso {
@@ -859,12 +870,17 @@ button {
   }
 
   .auditoria-buttons {
+    flex: 1;
     justify-content: flex-start;
   }
 
   .auditoria-buttons .btn-black,
-  .auditoria-buttons .btn-outline {
+  .auditoria-buttons .btn-outline-green {
     flex: none;
+  }
+
+  .auditoria-buttons .btn-outline-green {
+    margin-left: auto;
   }
 
   .btn-text-desktop {
